@@ -1,0 +1,10 @@
+freebsd_instance:
+  image_family: freebsd-12-1
+
+task:
+  script:
+    - ./configure
+    - make
+    - make install
+  check_script:
+    - make check
